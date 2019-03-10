@@ -13,7 +13,7 @@ from vizdoom import *
 from utils.network_params import *
 
 
-def create_environment(scenario = 'basic', no_window = False, actions_type="all", player_mode=False):
+def create_environment(scenario = 'basic', no_window = True, actions_type="all", player_mode=False):
     """
     Description
     ---------------
