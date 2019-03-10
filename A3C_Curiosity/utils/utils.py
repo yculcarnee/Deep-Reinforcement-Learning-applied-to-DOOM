@@ -37,7 +37,7 @@ def create_environment(scenario = 'basic', no_window = False, actions_type="all"
         game.set_window_visible(True)
     
     # Load the correct configuration
-    game.load_config(os.path.join("scenarios",params.scenario+".cfg"))
+    game.load_config(os.path.join("Deep-Reinforcement-Learning-applied-to-DOOM/A3C_Curiosity/scenarios",params.scenario+".cfg"))
     game.set_doom_scenario_path(os.path.join("Deep-Reinforcement-Learning-applied-to-DOOM/A3C_Curiosity/scenarios",params.scenario+".wad"))
     
     # Switch to RGB in player mode
