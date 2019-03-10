@@ -31,10 +31,11 @@ def create_environment(scenario = 'basic', no_window = True, actions_type="all",
     """
     
     game = DoomGame()
-    if no_window:
+    """if no_window:
         game.set_window_visible(False)        
     else:
-        game.set_window_visible(True)
+        game.set_window_visible(True)"""
+    
     
     # Load the correct configuration
     game.load_config(os.path.join("Deep-Reinforcement-Learning-applied-to-DOOM/A3C_Curiosity/scenarios",params.scenario+".cfg"))
@@ -44,6 +45,7 @@ def create_environment(scenario = 'basic', no_window = True, actions_type="all",
     if player_mode:
         game.set_screen_format(ScreenFormat.RGB24)
     
+    game.set_window_visible(False)
     # Initiliaze game
     game.init()
     
